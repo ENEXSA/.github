@@ -5,9 +5,17 @@ LABEL_GROUPS:
       description: Something isn't working
       color: d73a4a
 
-    #debt:
-    #  description: Issues to deal with later
-    #  color: 0c0c75
+    debt:
+      description: Issues to deal with later
+      color: 0c0c75
+
+    definition needed:
+      description: Further information is needed
+      color: ed8661
+
+    dependencies:
+      description: 'Pull requests that update a dependency file'
+      color: 0366d6
 
     documentation:
       description: Improvements or additions to documentation
@@ -65,18 +73,38 @@ LABEL_GROUPS:
       description: The issue wase raised by internal testing
       color: 6207FD
 
-  #infrastructure:
-  #  infrastructure:
-  #    description: Improvements or additions to project infrastructure
-  #    color: ffdda8
-
-  #  automation:
-  #    description: Issues for automation actions
-  #    color: fbca04
-
+  uishell:
+    area:DPS:
+      description: Data Processing Service
+      color: FEF2C0
+    area:DPS_V2:
+      description: Data Processing Service V2
+      color: FEF2C0
+    area:DareiosGateway:
+      description: Dareiod Gateway
+      color: FEF2C0
+    area:IT-Portal:
+      description: IT Portal
+      color: FEF2C0
+    area:VOS:
+      description: Visual Opertation Support
+      color: FEF2C0
+    area:authentication:
+      description: Authentication
+      color: FEF2C0
+    area:calculation:
+      description: Calculation
+      color: FEF2C0
+    area:centrallogging:
+      description: Central Logging
+      color: FEF2C0
+    area:clustermanagement:
+      description: Cluster Management
+      color: FEF2C0
+    area:core:
+      description: Core Components
+      color: FEF2C0
 
 REPOS:
-  #pull-request-responsibility:
-  #  - infrastructure
-  #manage-your-labels:
-  #  - infrastructure
+  service-uishell:
+    - uishell
