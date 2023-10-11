@@ -5,8 +5,8 @@ on:
   workflow_dispatch:
 jobs:
   mirror-labels:
-    # runs-on: ubuntu-latest
-    runs-on: [self-hosted, windows, docker]
+    runs-on: ubuntu-latest
+    # runs-on: [self-hosted, windows, docker]
     env:
       BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
     name: manage-your-labels
