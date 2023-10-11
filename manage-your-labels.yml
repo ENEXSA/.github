@@ -73,6 +73,22 @@ LABEL_GROUPS:
       description: The issue wase raised by internal testing
       color: 6207FD
 
+    .NET:
+      description: Pull requests that update .net code
+      color: ffa221
+
+    javascript:
+      description: Pull requests that update Javascript code
+      color: ffa221
+
+    java:
+      description: Pull requests that update Java code
+      color: ffa221
+
+    python:
+      description: Pull requests that update Python code
+      color: ffa221
+
   uishell:
     area:DPS:
       description: Data Processing Service
@@ -105,6 +121,32 @@ LABEL_GROUPS:
       description: Core Components
       color: FEF2C0
 
+  calc-worker:
+    worker:ebsilon:
+      description: Ebsilon - non tineseries
+      color: FEF2C0
+    worker:ebsilon:timeseries:
+      description: Ebsilon - tineseries
+      color: FEF2C0
+
+  excel-addin:
+    addin:ebsilon:
+      description: Ebsilon - non tineseries
+      color: FEF2C0
+    addin:ebsilon:timeseries:
+      description: Ebsilon - tineseries
+      color: FEF2C0
+    addin:dataprocessing:
+      description: Data Processing Service
+      color: FEF2C0
+
+
 REPOS:
   service-uishell:
     - uishell
+  service-coordinator:
+    - calc-worker
+  component-enexsa_py:
+    - calc-worker
+  client-excel-addins:
+    - excel-addin
