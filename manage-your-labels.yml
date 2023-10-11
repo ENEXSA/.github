@@ -89,6 +89,14 @@ LABEL_GROUPS:
       description: Pull requests that update Python code
       color: ffa221
 
+    platform:windows:
+      description: Issues related to the Windows platform
+      color: 006B75
+
+    platform:linux:
+      description: Issues related to the Linux platform
+      color: 006B75
+
   uishell:
     area:DPS:
       description: Data Processing Service
@@ -140,6 +148,14 @@ LABEL_GROUPS:
       description: Data Processing Service
       color: FEF2C0
 
+  cluster:
+    area:cluster agent:
+      description: Cluster Agent
+      color: FEF2C0
+    area:cluster installer:
+      description: Cluster Installer
+      color: FEF2C0
+
 
 REPOS:
   service-uishell:
@@ -150,3 +166,5 @@ REPOS:
     - calc-worker
   client-excel-addins:
     - excel-addin
+  service-cluster:
+    - cluster
