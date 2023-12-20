@@ -131,18 +131,39 @@ LABEL_GROUPS:
 
   calc-worker:
     worker:ebsilon:
-      description: Ebsilon - non tineseries
+      description: Worker Ebsilon
       color: FEF2C0
     worker:ebsilon:timeseries:
-      description: Ebsilon - tineseries
+      description: Worker Ebsilon - timeseries
       color: FEF2C0
+    worker:python:
+      description: Worker Python
+      color: 94C7F3
+    worker:python:cpython:
+      description: Worker CPython
+      color: 94C7F3
+    worker:python:ironpython:
+      description: Worker IronPython
+      color: 94C7F3
+    worker:csharp:
+      description: Worker C#
+      color: 41B67F
+    worker:csharp:gatecycle:
+      description: Worker C# GateCycle
+      color: 41B67F
+    worker:optimizer:ga:
+      description: Worker Optimizer GA
+      color: B4D664
+    worker:dpf:
+      description: Worker DPF
+      color: E971D5
 
   excel-addin:
     addin:ebsilon:
-      description: Ebsilon - non tineseries
+      description: Ebsilon
       color: FEF2C0
     addin:ebsilon:timeseries:
-      description: Ebsilon - tineseries
+      description: Ebsilon - timeseries
       color: FEF2C0
     addin:dataprocessing:
       description: Data Processing Service
