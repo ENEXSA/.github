@@ -98,6 +98,9 @@ LABEL_GROUPS:
       color: 006B75
 
   uishell:
+    area:billing:
+      description: Billing
+      color: FEF2C0
     area:DPS:
       description: Data Processing Service
       color: FEF2C0
