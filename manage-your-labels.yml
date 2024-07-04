@@ -62,11 +62,11 @@ LABEL_GROUPS:
       color: ffffff
 
 
-    trige:needed:
+    triage:needed:
       description: It must be determined how the problem/feature can be solved and if it can be solved.
       color: fcba03
 
-    trige:security:
+    triage:security:
       description: The issue needs to be triaged in terms of information security
       color: fc6203
 
