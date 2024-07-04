@@ -7,6 +7,10 @@ assignees: ''
 
 ---
 
+### Prerequisites
+
+- [ ] I have checked if the same issue is already present.
+
 ### Is your feature request related to a problem? Please describe.
 
 *A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]*
