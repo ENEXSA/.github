@@ -1,20 +1,50 @@
 ---
 name: Feature request
 about: Suggest an idea for this project
-title: ''
-labels: enhancement
+title: "[FEATURE]: "
+labels: enhancement, triage:needed, triage:security
 assignees: ''
 
 ---
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+### Prerequisites
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+- [ ] I have checked if the same issue is already present.
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
+### Is your feature request related to a problem? Please describe.
 
-**Additional context**
-Add any other context or screenshots about the feature request here.
+*A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]*
+
+### Describe the solution you'd like
+
+*A clear and concise description of what you want to happen.*
+
+### Describe alternatives you've considered
+
+*A clear and concise description of any alternative solutions or features you've considered.*
+
+### Additional context
+
+*Add any other context or screenshots about the feature request here.*
+
+### Acceptance Criteria
+
+*Describe when the feature can be considered complete in a clear and concise manner.*
+
+----
+## Triage
+
+*The section has to be filled during the triage*
+
+* [ ] Is all the necessary information provided?
+* [ ] Are there ideas on how to fix the bug? (if yes describe below)
+* [ ] Has the Information Security assesment completed?
+
+
+
+## Information Security
+
+* [ ] Information Security Assessed by: [Name of Assessor]
+* [ ] Has information security implications (if so, describe below)
+
+
