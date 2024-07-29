@@ -9,6 +9,7 @@ assignees: ''
 
 ### Prerequisites
 
+* [ ] I have checked if the same issue is already present.
 * [ ] Can you reproduce the problem?
 * [ ] Are you running the latest version?
 * [ ] Can you reproduce the problem with the last version?
