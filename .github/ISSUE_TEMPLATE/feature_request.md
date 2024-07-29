@@ -37,7 +37,7 @@ assignees: ''
 *The section has to be filled during the triage*
 
 * [ ] Is all the necessary information provided?
-* [ ] Are there ideas on how to fix the bug? (if yes describe below)
+* [ ] Are there ideas on how to fix the bug? (if yes describe below) <!-- N/A -->
 * [ ] Has the Information Security assesment completed?
 
 
@@ -45,6 +45,6 @@ assignees: ''
 ## Information Security
 
 * [ ] Information Security Assessed by: [Name of Assessor]
-* [ ] Has information security implications (if so, describe below)
+* [ ] Has information security implications (if so, describe below) <!-- N/A -->
 
 
