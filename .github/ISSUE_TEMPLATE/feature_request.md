@@ -33,12 +33,11 @@ assignees: ''
 
 ----
 ## Triage
-
 *The section has to be filled during the triage*
 
 * [ ] Is all the necessary information provided?
 * [ ] Are there ideas on how to fix the bug? (if yes describe below) <!-- N/A -->
-* [ ] Has the Information Security assesment completed?
+* [ ] Has the Information Security assessment completed?
 
 
 
