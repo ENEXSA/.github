@@ -77,22 +77,57 @@ All PRs should undergo an information security review. For each PR, the followin
 
 ----
 
-# Open Source Licenses Allowed in Closed Source Software
+# Open Source Licenses Information for the review
 
-The following open-source licenses can be used in closed source software. Ensure each third-party component introduced has a compatible license.
+### 1. **Unlicense**
+   - **Usability for Closed Source**: This is the most permissive license, essentially placing the work in the public domain. You can use, modify, and distribute the code in closed-source applications with no restrictions.
+   - **Reference**: [The Unlicense on OSI](https://opensource.org/licenses/Unlicense)
 
-* __MIT License:__ Allows for commercial use, distribution, modification, and private use. No restrictions on closed source usage.
-* __Apache License 2.0:__ Allows for commercial use, distribution, and modification with a notice of changes. Provides patent rights and is compatible with closed source.
-* __BSD 3-Clause License:__ Permits commercial use, modification, and distribution without requiring the source code to be open.
-* __Boost Software License:__ Very permissive and allows use in proprietary software with few restrictions.
-* __Zlib License:__ Allows for the use, modification, and distribution of code in closed source software.
+### 2. **MIT License**
+   - **Usability for Closed Source**: Highly permissive, allowing integration into closed-source applications without restrictions other than the requirement to include attribution.
+   - **Reference**: [MIT License on OSI](https://opensource.org/licenses/MIT)
 
-## Not Recommended for Closed Source
+### 3. **BSD 3-Clause License (New or Revised)**
+   - **Usability for Closed Source**: Permissive like the MIT License, allowing closed-source use with only the requirement to provide attribution.
+   - **Reference**: [BSD 3-Clause License on OSI](https://opensource.org/licenses/BSD-3-Clause)
 
-The following licenses are not recommended for closed source software due to restrictions or requirements to open source your code:
+### 4. **Apache License 2.0**
+   - **Usability for Closed Source**: Permits closed-source use and distribution, with additional patent protection. The only requirement is to include attribution and a copy of the license.
+   - **Reference**: [Apache License 2.0 on OSI](https://opensource.org/licenses/Apache-2.0)
 
-* __GNU General Public License (GPL)__
-* __Affero General Public License (AGPL)__
-* __GNU Lesser General Public License (LGPL):__ (some conditions allow linking but restrict modification)
+### 5. **Boost Software License 1.0**
+   - **Usability for Closed Source**: The Boost Software License is highly permissive, similar to the MIT License. It allows closed-source use with very few restrictions, requiring only attribution.
+   - **Reference**: [Boost License on OSI](https://opensource.org/licenses/BSL-1.0)
 
+### 6. **Zlib License**
+   - **Usability for Closed Source**: Similar to the MIT and BSD licenses, this license allows for easy integration into closed-source projects with minimal requirements (attribution).
+   - **Reference**: [Zlib License on OSI](https://opensource.org/licenses/Zlib)
 
+### 7. **Mozilla Public License 2.0 (MPL 2.0)**
+   - **Usability for Closed Source**: MPL allows mixing open-source and proprietary code. You can keep your proprietary code closed, but any modifications to the MPL-licensed code must remain open-source.
+   - **Reference**: [MPL 2.0 on Mozilla](https://www.mozilla.org/en-US/MPL/2.0/)
+
+### 8. **Eclipse Public License 2.0 (EPL 2.0)**
+   - **Usability for Closed Source**: EPL allows linking proprietary code with EPL-licensed code. Modifications to EPL code must remain open-source, but proprietary code can stay closed.
+   - **Reference**: [EPL 2.0 on Eclipse Foundation](https://www.eclipse.org/legal/epl-2.0/)
+
+### 9. **CDDL (Common Development and Distribution License)**
+   - **Usability for Closed Source**: Like MPL, CDDL allows proprietary and open-source code to coexist. Changes to the CDDL-covered code must be made public, but you can keep your own code closed-source.
+   - **Reference**: [CDDL License on OSI](https://opensource.org/licenses/CDDL-1.0)
+
+### 10. **LGPLv3 (GNU Lesser General Public License version 3)**
+   - **Usability for Closed Source**: LGPL allows linking with proprietary software. However, any modifications to the LGPL-covered library must be open-sourced. This makes it useful for libraries that can be linked without modifying the original code.
+   - **Reference**: [LGPLv3 on GNU](https://www.gnu.org/licenses/lgpl-3.0.html)
+
+### 11. **AGPLv3 (GNU Affero General Public License version 3)**
+   - **Usability for Closed Source**: AGPLv3 is a strong copyleft license designed for software used over a network. It requires that even if the software is modified for use in a SaaS environment, the source code must be made available to users. This makes it unsuitable for most closed-source applications, especially in web services.
+   - **Reference**: [AGPLv3 on GNU](https://www.gnu.org/licenses/agpl-3.0.html)
+
+### 12. **GPLv3 (GNU General Public License version 3)**
+   - **Usability for Closed Source**: GPL is the least friendly to closed-source applications. Any software that uses GPL code must be open-sourced under the same GPL license (strong copyleft). Commercial use is allowed, but it forces the entire project to be open-source if any part uses GPL code.
+   - **Reference**: [GPLv3 on GNU](https://www.gnu.org/licenses/gpl-3.0.html)
+
+### Summary
+- **Most Permissive for Closed Source**: **Unlicense**, **MIT**, **BSD**, **Apache**, **Boost**, and **Zlib** licenses allow for seamless integration into closed-source projects with minimal restrictions.
+- **Mixed Open/Closed Source**: **MPL**, **EPL**, **CDDL**, and **LGPL** allow mixing open and proprietary code, with restrictions on modifications to open-source components.
+- **Least Suitable for Closed Source**: **AGPL** and **GPL** impose strong copyleft obligations, making them less viable for closed-source development unless the entire application is open-sourced. AGPL is particularly strict for network services.
