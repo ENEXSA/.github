@@ -64,16 +64,81 @@ List all new or modified third-party components introduced or updated in the cod
 
 ## Information Security
 
-All PRs should undergo an information security review. For each PR, the following items must be considered:
+All PRs should undergo an information security review. For each PR, the following items must be considered _(if a item does not apply put a `N/A` at the end)_:
 
 * [ ] Information Security Assessed by: [Name of Assessor]
+* Secure Coding Practices:
+  - Injection Vulnerabilities:
+    - [ ] Are all user inputs validated or sanitized?
+    - [ ] Is there protection against SQL Injection, XSS, etc.?
+  - Sensitive Data Handling:
+    - [ ] Is sensitive data encrypted at rest and in transit?
+    - [ ] Are logging practices secure (e.g., no sensitive data in logs)?
+  - Secure Transport:
+    - [ ] Is HTTPS or another secure protocol used for data transmission?
+  - Authentication/Authorization:
+    - [ ] Are authentication mechanisms secure?
+    - [ ] Is access control implemented correctly?
+  - Third-Party Components:
+    - [ ] Are all third-party components reviewed for known vulnerabilities?
+    - [ ] Are licenses of third-party components compliant?
 * [ ] Has information security implications (if so, describe below)
   - [Provide details of any security implications the change introduces]
-* [ ] Secure Coding Practices:
-  - Check for potential vulnerabilities (e.g., SQL injection, XSS, insecure deserialization).
-  - Ensure sensitive data is properly handled (e.g., encryption, logging, access control).
-  - Validate use of secure transport (e.g., HTTPS).
-  - Review authentication/authorization changes for security best practices.
+
+----
+
+# Steps for Information Security Review
+
+1. **Initial Review of the PR Template**
+   - Ensure the PR template is completed by the developer, including the code quality, third-party component assessment, and initial security checks.
+   - Verify that all necessary information is provided for both internal and external components.
+
+2. **Code Quality Evaluation**
+   - **Code Style and Maintainability**: Verify that the code adheres to the project's style guidelines. Ensure the code is clean, maintainable, and well-documented where appropriate.
+   - **Logic, Efficiency, and Duplication**: Review the code for any logical errors, inefficient algorithms, or redundant code.
+   - **Testing Adequacy**: Confirm that unit tests and integration tests are provided and pass successfully. Ensure that security-related functionalities are adequately tested.
+
+3. **Third-Party Component Assessment**
+   - **Component Documentation**: Review the list of third-party components that have been introduced or modified in the PR.
+   - **License Review**: Verify the license type of each component (e.g., MIT, Apache 2.0) to ensure compliance with organizational policies.
+   - **Security Risks of Components**: Assess whether any of the third-party components have known vulnerabilities. Use trusted sources (e.g., CVE databases, vendor documentation) to check for security advisories related to the component.
+   - **Document Risks**: For each third-party component, describe any security implications and necessary mitigations. Ensure that the “Information Security Assessed by” field is filled in with the name of the assessor.
+
+4. **Information Security Review of the PR**
+   - **Name of Assessor**: Fill in the field "Information Security Assessed by" with your name or the name of the designated security assessor.
+   - **Has Information Security Implications?**: Determine if the code changes introduce any new security implications (e.g., handling of sensitive data, changes to authentication/authorization).
+     - If the PR introduces no security implications, note this in the PR.
+     - If the PR introduces security implications, document these clearly in the provided section.
+     - Include details about mitigations or controls in place to address the identified risks (e.g., data encryption, input validation, etc.).
+
+5. **Secure Coding Practices Check**
+   Evaluate the following secure coding practices for all code changes:
+
+   - **Injection Vulnerabilities**:
+     - Ensure that inputs are validated and/or sanitized to protect against SQL injection, cross-site scripting (XSS), and other injection-based attacks.
+   
+   - **Handling of Sensitive Data**:
+     - Confirm that sensitive data (e.g., passwords, personal data) is handled securely.
+     - Ensure encryption is applied where necessary (e.g., at rest and in transit).
+     - Review how sensitive information is logged and ensure it is properly masked or omitted from logs.
+   
+   - **Secure Transport**:
+     - Validate that secure communication methods (e.g., HTTPS, TLS) are used when transmitting sensitive or critical information.
+   
+   - **Authentication and Authorization**:
+     - Ensure that any changes related to authentication (e.g., login mechanisms, password handling) follow security best practices.
+     - Review access control logic to confirm proper role-based access controls (RBAC) or other authorization mechanisms are in place.
+
+6. **Review Results**
+   - Once all aspects of the review are complete, provide a summary of your findings.
+     - **Pass**: If no significant security risks are identified, and the secure coding practices are followed, approve the PR.
+     - **Require Changes**: If there are minor issues, request changes in the PR and provide clear feedback to the developer on what needs to be addressed.
+     - **Reject/Block**: If serious vulnerabilities or risks are found, block the PR and escalate the issue for further review. Provide detailed documentation of the issues discovered.
+
+7. **Documentation and Approval**
+   - Ensure that all findings, including any security risks and recommended changes, are documented in the PR review.
+   - Once the review is completed and the PR is approved or blocked, record the decision and document the rationale behind it.
+
 
 ----
 
