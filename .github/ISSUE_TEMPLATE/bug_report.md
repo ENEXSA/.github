@@ -56,7 +56,7 @@ assignees: ''
 
 ### Environment
 
-[Which app version? Production / Staging? Are test accounts available to reproduce the behaviour? What iOS/Android version? Which device?]
+[Which app version? Are test accounts available to reproduce the behaviour? What iOS/Android version? Which device?]
 
 ### Detailed Description
 
