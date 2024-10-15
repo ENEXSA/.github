@@ -7,12 +7,18 @@ assignees: ''
 
 ---
 
+*for more information see [Ticket Triage - Bug](https://github.com/ENEXSA/doc-development/blob/main/ticket/create_bug.md)*
+
 ### Prerequisites
 
 * [ ] I have checked if the same issue is already present.
 * [ ] Can you reproduce the problem?
 * [ ] Are you running the latest version?
 * [ ] Can you reproduce the problem with the last version?
+* Who has discovvered the bug (also set the respective label):
+  * [ ] the customer (label `occurrence:customer`) <!-- N/A -->
+  * [ ] internal usage (label: `occurrence:internal`) <!-- N/A -->
+  * [ ] internal testing (label `occurrence:testing`) <!-- N/A -->
 
 ### Describe the bug
 
@@ -62,12 +68,16 @@ assignees: ''
 
 ----
 ## Triage
-*The section has to be filled during the triage*
+*The section has to be filled during the triage (for more information see [Ticket Triage - Bug](https://github.com/ENEXSA/doc-development/blob/main/ticket/triage_bug.md))*
 
 * [ ] Is all the necessary information provided?
 * [ ] Are there ideas on how to fix the bug? (if yes describe below) <!-- N/A -->
 * [ ] Has the Information Security assessment completed?
-
+* Severity:
+  * [ ] **Critical**: Immediate attention required due to system outages or security vulnerabilities.  <!-- N/A -->
+  * [ ] **High**: Affects core functionality but doesn't require urgent attention.  <!-- N/A -->
+  * [ ] **Medium**: Important but less urgent functionality issues.  <!-- N/A -->
+  * [ ] **Low**: Minor defects or non-critical issues.  <!-- N/A -->
 
 
 ## Information Security
