@@ -83,6 +83,24 @@ LABEL_GROUPS:
       description: The issue wase raised by internal testing
       color: 6207FD
 
+
+    severity:critical:
+      description: Immediate attention required due to system outages or security vulnerabilities.
+      color: e74c3c
+
+    severity:high:
+      description: Affects core functionality but doesn't require urgent attention.
+      color: d35400
+
+    severity:medium:
+      description: Important but less urgent functionality issues.
+      color: 99a3a4
+
+    severity:low:
+      description: Minor defects or non-critical issues.
+      color: 6207FD
+
+
     .NET:
       description: Pull requests that update .net code
       color: ffa221

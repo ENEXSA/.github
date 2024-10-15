@@ -9,7 +9,11 @@ assignees: ''
 
 ### Prerequisites
 
-- [ ] I have checked if the same issue is already present.
+* [ ] I have checked if the same issue is already present.
+* Who raised the issue (*also set the respective label*):
+  * [ ] by the customer (label `occurrence:customer`) <!-- N/A -->
+  * [ ] by internal usage (label: `occurrence:internal`) <!-- N/A -->
+  * [ ] by internal testing (label `occurrence:testing`) <!-- N/A -->
 
 ### Is your feature request related to a problem? Please describe.
 
@@ -36,7 +40,7 @@ assignees: ''
 *The section has to be filled during the triage*
 
 * [ ] Is all the necessary information provided?
-* [ ] Are there ideas on how to fix the bug? (if yes describe below) <!-- N/A -->
+* [ ] Are there ideas on how to implement the feature? (if yes describe below) <!-- N/A -->
 * [ ] Has the Information Security assessment completed?
 
 
