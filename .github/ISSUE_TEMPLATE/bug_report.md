@@ -15,7 +15,7 @@ assignees: ''
 * [ ] Can you reproduce the problem?
 * [ ] Are you running the latest version?
 * [ ] Can you reproduce the problem with the last version?
-* Who has discovvered the bug (also set the respective label):
+* Who has discovered the bug (also set the respective label):
   * [ ] the customer (label `occurrence:customer`) <!-- N/A -->
   * [ ] internal usage (label: `occurrence:internal`) <!-- N/A -->
   * [ ] internal testing (label `occurrence:testing`) <!-- N/A -->
