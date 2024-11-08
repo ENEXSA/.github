@@ -22,7 +22,7 @@ assignees: ''
 
 ### Describe the bug
 
-[Description of the bug or feature]
+[Description of the bug]
 
 ### Steps to Reproduce
 
@@ -84,4 +84,20 @@ assignees: ''
 
 * [ ] Information Security Assessed by: [Name of Assessor]
 * [ ] Has information security implications (if so, describe below) <!-- N/A -->
+
+---
+## Analysis
+*The section has to be filled after the analysis of the bug (for more information see [Ticket Handling - Bug](https://github.com/ENEXSA/doc-development/blob/main/ticket/handling_bug.md))*
+
+ ### Root Cause
+ *[Clearly describe the root cause of the bug].*
+
+ 
+---
+## Solution
+*The section has to be filled after the bug has been handled - before the ticket is closed (for more information see [Ticket Handling - Bug](https://github.com/ENEXSA/doc-development/blob/main/ticket/handling_bug.md))*
+
+### Detail of the Fix
+*[Document the fix and how it was validated.]*
+
 

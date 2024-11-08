@@ -1,4 +1,4 @@
-*for more information see [PR Create](https://github.com/ENEXSA/doc-development/blob/main/pull_request/create.md) *
+*for more information see [PR Create](https://github.com/ENEXSA/doc-development/blob/main/pull_request/create.md)*
 
 ## Types of changes
 
