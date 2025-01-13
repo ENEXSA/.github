@@ -141,6 +141,9 @@ LABEL_GROUPS:
     area:IT-Portal:
       description: IT Portal
       color: FEF2C0
+    area:licensemanagement:
+      description: License Management
+      color: FEF2C0
     area:VOS:
       description: Visual Opertation Support
       color: FEF2C0
