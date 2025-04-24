@@ -4,7 +4,7 @@ about: Suggest an idea for this project
 title: "[FEATURE]: "
 labels: enhancement, triage:needed, triage:security
 assignees: ''
-
+type: Feature
 ---
 
 ### Prerequisites
