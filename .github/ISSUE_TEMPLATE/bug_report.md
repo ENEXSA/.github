@@ -4,7 +4,7 @@ about: Create a report to help us improve
 title: "[BUG]: "
 labels: bug, triage:needed, triage:security
 assignees: ''
-
+type: Bug
 ---
 
 *for more information see [Ticket Triage - Bug](https://github.com/ENEXSA/doc-development/blob/main/ticket/create_bug.md)*
