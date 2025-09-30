@@ -162,6 +162,9 @@ LABEL_GROUPS:
     area:core:
       description: Core Components
       color: FEF2C0
+    area:configuration:
+      description: Configuration Service
+      color: FEF2C0
 
   calc-worker:
     worker:ebsilon:
